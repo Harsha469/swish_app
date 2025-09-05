@@ -28,3 +28,6 @@ def query_params():
         results.append({'id':u.id, 'name':u.name, 'price':u.price})
     return jsonify(msg = results)
 
+@app.route('/new')
+def new_one():
+    return 'hello'
